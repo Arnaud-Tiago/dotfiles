@@ -7,3 +7,17 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+alias treesize="tree --du -h"
+
+alias findpkg="dpkg -s"
+
+alias cdpr="cd ~/code/arnaud-odet/2_projets"
+
+alias cdph="cd ~/code/arnaud-odet/7_PhD"
+alias gitnote="git add notes/ && git commit -m'updated notes' && git push origin main"
+
+alias cdnotes="~/code/arnaud-odet/1_notes"
+
+#Bruncky's code to create JNB presentations
+jnbconvert() { ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --no-input --post serve}

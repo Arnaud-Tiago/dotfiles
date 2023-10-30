@@ -9,5 +9,109 @@
     "key": "cmd+shift+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "a",
+    "command": "jupyter.insertCellAbove",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+[Comma] a",
+    "command": "-jupyter.insertCellAbove",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "b",
+    "command": "jupyter.insertCellBelow",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+[Comma] b",
+    "command": "-jupyter.insertCellBelow",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "notebook.cell.split",
+    "when": "editorTextFocus && inputFocus && notebookEditorFocused && !notebookOutputFocused"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-notebook.cell.split",
+    "when": "editorTextFocus && inputFocus && notebookEditorFocused && !notebookOutputFocused"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "notebook.cell.joinBelow",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "alt+meta+j",
+    "command": "-notebook.cell.joinBelow",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "notebook.cell.joinAbove",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "shift+alt+meta+j",
+    "command": "-notebook.cell.joinAbove",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+alt+v",
+    "command": "markdown.showPreviewToSide",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.showPreviewToSide",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+j ctrl+s",
+    "command": "jupyter-slideshow.switchSlideType"
+  },
+  {
+    "key": "ctrl+j ctrl+t",
+    "command": "jupyter-cell-tags.addTag"
+  },
+  {
+    "key": "ctrl+j ctrl+l",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.debug.run",
+    "when": "debuggersAvailable && debugState != 'initializing'"
+  },
+  {
+    "key": "ctrl+f5",
+    "command": "-workbench.action.debug.run",
+    "when": "debuggersAvailable && debugState != 'initializing'"
   }
 ]
